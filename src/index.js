@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Login from './Login/login.js';
+import Card from './Dashboard/dash_card';
+import 'tachyons';
+import {names} from './Dashboard/names'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
+    <Card name={names[0].name} email={names[0].email}/>
+    <Card name={names[2].name} email={names[2].email}/>
+    <Card name={names[3].name} email={names[3].email}/>
   </React.StrictMode>
 );
 

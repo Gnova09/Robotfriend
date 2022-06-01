@@ -1,10 +1,9 @@
 
 import './login.css';
-import React from "react";
-import ReactDOM from "react-dom";
+import React,{Component} from "react";
 
-class login extends React.Component{
-    render(){
+
+const login = () =>{
         return ( 
             <div className='contenedor'>
             <img className='avatar_login' src={require('./img/logo.png')}/>
@@ -22,5 +21,4 @@ class login extends React.Component{
         </div>
         );
     }
-
-} export default login;
+export default login;
