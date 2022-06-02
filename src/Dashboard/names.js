@@ -53,10 +53,5 @@ export const names = [
     username: 'Delphine',
     email: 'Chaim_McDermott@dana.io'
   },
-  {
-    id: 10,
-    name: 'Clementina DuBuque',
-    username: 'Moriah.Stanton',
-    email: 'Rey.Padberg@karina.biz'
-  }
+
 ];
