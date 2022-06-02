@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* seccion de sidebar */
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    background: rgb(0, 218, 247);
+}
+.sidebar.active{
+    width: 60px;
+    transition: all 0.5s ease;
+}
+.sidebar.close{
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+.sidebar.active p{
+display: none;
+}
+.sidebar ul li{
+    padding: 15px 10px;
+    border-bottom: 1px solid darkgray;
+    margin: auto;
+    display: flex;
+}
+.sidebar li img{
+    width: 20px;
+    height: 20px;
+}
+.sidebar.close p{
+    margin: auto;
+    text-align: center;
+    }
+.sidebar.close .logo{
+     display: block;
+     margin: auto;
+     text-align: center;
+    }  
+.sidebar.active .avatar{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+.sidebar.close .avatar{
+    width: 70%;
+    height:  50%;
+    border-radius: 50%;
+    justify-items: center;
+}
+.sidebar.close .logo p{
+    margin: auto;
+    text-align: center;
+}
+
+/* seccion principal */
+.sidebar.active ~ .contenedor {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.contenedor {
+    position: relative;
+    width: calc(100% - 200px);
+    left: 200px;
+    transition: all 0.5s ease;
+}
+
+.superiobar{
+    display: flex;
+    width: 100%;
+    background: rgb(0, 218, 247);
+    -webkit-box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78); 
+    box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78);
+}
+.superiobar span{
+    width: 40px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
