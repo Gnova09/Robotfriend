@@ -14,12 +14,7 @@ class dashboard extends Component {
     }
     onclick_btnsidebar(event){
         const side = document.getElementById("side");
-
-        if (side.classList.contains('close')) {
-          side.classList.replace('close', 'active');
-        } else {
-            side.classList.replace('active', 'close');
-        }
+            side.classList.toggle('close');
     }
     render(){
         this.setState(this.state);

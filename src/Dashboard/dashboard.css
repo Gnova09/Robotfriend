@@ -10,15 +10,15 @@
     width: 200px;
     background: rgb(0, 218, 247);
 }
-.sidebar.active{
+.sidebar.close{
     width: 60px;
     transition: all 0.5s ease;
 }
-.sidebar.close{
+.sidebar{
     white-space: nowrap;
     transition: all 0.5s ease;
 }
-.sidebar.active p{
+.sidebar.close p{
 display: none;
 }
 .sidebar ul li{
@@ -31,33 +31,33 @@ display: none;
     width: 20px;
     height: 20px;
 }
-.sidebar.close p{
+.sidebar p{
     margin: auto;
     text-align: center;
     }
-.sidebar.close .logo{
+.sidebar .logo{
      display: block;
      margin: auto;
      text-align: center;
     }  
-.sidebar.active .avatar{
+.sidebar.close .avatar{
     width: 80%;
     height: 80%;
     border-radius: 50%;
 }
-.sidebar.close .avatar{
+.sidebar .avatar{
     width: 70%;
     height:  50%;
     border-radius: 50%;
     justify-items: center;
 }
-.sidebar.close .logo p{
+.sidebar .logo p{
     margin: auto;
     text-align: center;
 }
 
 /* seccion principal */
-.sidebar.active ~ .contenedor {
+.sidebar.close ~ .contenedor {
     width: calc(100% - 60px);
     left: 60px;
 }

@@ -10,7 +10,7 @@ body{
    font-size: sans-serif;
 }
 
-.contenedor{
+.contenedor_login{
     width: 350px;
     height: 400px;
     background: #4e4d4d;
@@ -28,13 +28,13 @@ body{
     top: -50px;
     left: calc(50% - 50px);
 }
-.contenedor h1{
+.contenedor_login h1{
     padding: 0 0 20px;
     margin: 0;
     text-align: center;
 
 }
-.contenedor label{
+.contenedor_login label{
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -63,6 +63,6 @@ body{
     background: #90FDFF;
     height: 30px;
 }
-.contenedor a{
+.contenedor_login a{
     color: white;
 }

@@ -1,26 +1,22 @@
-import React,{Component} from "react";
-import Dashboard from './Dashboard/dashboard.js';
-import {names} from "./Dashboard/names.js";
+ import { render } from "@testing-library/react";
+import React from "react";
+ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+ import Dashboardrout from './Dashboard/dashboard';
+ import Login from './Login/login';
 
-class App extends Component {
-    constructor(){
-        super()
-        this.state = {
-            props_name: names,
-            btn_sidebar: ''
-        }
-    }
-    onclick_btnsidebar(event){
-        console.log(event);
-    }
-    
-    render(){
-        this.setState(this.state);
-        return(
-            <div> 
-                <Dashboard props = {this.state.props_name}/> 
-            </div>   
+ const App =()=> {
+     
+     return(
+         <div>
+         <Router>
+                <Routes>
+                    <Route path="/" element={<Login/>} />
+                </Routes> 
+                <Routes>
+                    <Route path="/dash" element={<Dashboardrout/>} />
+                </Routes> 
+         </Router>
+         </div>
         );
-    }
-}
-export default App;
+ }
+ export default App;
