@@ -1,24 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 /* seccion de sidebar */
 .sidebar{
     position: fixed;
     height: 100%;
     width: 200px;
-    background: rgb(0, 218, 247);
+    background: rgb(205, 218, 204);
+    -webkit-box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78); 
+    box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78);
+    text-decoration: none;
 }
+
 .sidebar.close{
     width: 60px;
     transition: all 0.5s ease;
 }
 .sidebar{
-    white-space: nowrap;
     transition: all 0.5s ease;
 }
-.sidebar.close p{
+.sidebar.close p, .sidebar.close .logo p{
 display: none;
 }
 .sidebar ul li{
@@ -26,34 +25,52 @@ display: none;
     border-bottom: 1px solid darkgray;
     margin: auto;
     display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 .sidebar li img{
+    display: flex;
     width: 20px;
     height: 20px;
+   justify-content: center;
 }
-.sidebar p{
+.sidebar p {
     margin: auto;
     text-align: center;
+    
+    color: black;
+    }
+    a{
+        text-decoration: none;
     }
 .sidebar .logo{
-     display: block;
-     margin: auto;
-     text-align: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
     }  
-.sidebar.close .avatar{
+.sidebar.close .logoins{
     width: 80%;
     height: 80%;
     border-radius: 50%;
 }
-.sidebar .avatar{
+.sidebar .logoins{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 70%;
     height:  50%;
     border-radius: 50%;
-    justify-items: center;
 }
 .sidebar .logo p{
+    display: flex;
     margin: auto;
     text-align: center;
+    text-decoration: none;
 }
 
 /* seccion principal */
@@ -71,14 +88,27 @@ display: none;
 .superiobar{
     display: flex;
     width: 100%;
-    background: rgb(0, 218, 247);
+    height: 50px;
+    background:rgb(205, 218, 204);
     -webkit-box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78); 
     box-shadow: 5px 8px 15px 0px rgba(0,0,0,0.78);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+ .avartar_con {
+    display: flex;
+    align-items: center;
 }
 .superiobar span{
     width: 40px;
-    text-align: center;
     font-size: 2rem;
-    border: 1px solid black;
+    margin-left: 10px;
+   
 }
+.superiobar .avatar{
+    width: 40px;
+    margin-right: 10px;
+}
+
 
