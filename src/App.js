@@ -1,26 +1,25 @@
-import React,{Component} from "react";
-import Dashboard from './Dashboard/dashboard.js';
-import {names} from "./Dashboard/names.js";
 
-class App extends Component {
-    constructor(){
-        super()
-        this.state = {
-            props_name: names,
-            btn_sidebar: ''
-        }
-    }
-    onclick_btnsidebar(event){
-        console.log(event);
-    }
-    
-    render(){
-        this.setState(this.state);
-        return(
-            <div> 
-                <Dashboard props = {this.state.props_name}/> 
-            </div>   
+import React from "react";
+ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+ import Dashboardrout from './Dashboard/dashboard';
+ import Login from './Login/login';
+ import NewUser from './Dashboard/formulario/newUser';
+ import Userlist from './Dashboard/lista/userlist'
+ 
+
+ const App =()=> {
+     
+     return(
+         <div>
+         <Router>
+                <Routes>
+                    <Route  path="/" element={<Login/>} />
+                    <Route path="/dash" element={<Dashboardrout/>} />
+                    <Route path="/dash/newUser" element={<NewUser />} />
+                    <Route path="/dash/list" element={<Userlist />} />
+                </Routes> 
+         </Router>
+         </div>
         );
-    }
-}
-export default App;
+ }
+ export default App;

@@ -3,38 +3,39 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-body{
-   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVJ44U2MSgobxlbjAAIgGp1tKP7OCNFBXrA&usqp=CAU")
-   no-repeat center top; 
+#root{
+   background: rgb(61, 163, 53); 
    background-size: cover;
-   font-size: sans-serif;
+   display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.contenedor{
-    width: 350px;
-    height: 400px;
-    background: #4e4d4d;
+.contenedor_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
     margin: auto;
-    margin-top: 180px;
-    position: relative;
+    margin-top: 50%;
     padding: 50px 30px;
-    color: white;
+    color: black;
+    border-radius: 4px;
 }
 .avatar_login{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    justify-self: center;
 }
-.contenedor h1{
+.contenedor_login h2{
     padding: 0 0 20px;
     margin: 0;
     text-align: center;
 
 }
-.contenedor label{
+.contenedor_login label{
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -46,23 +47,28 @@ body{
     margin-bottom: 20px;
     justify-content: center;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     background: transparent;
     outline: none;
     height: 40px;
-    color: white;
     font-size: 16px;
     
 }
 .input_button{
     width: 100%;
     margin-bottom: 20px;
-    justify-items: center;
+    text-align: center;
+    text-decoration: none;
     display: block;
-    border: none;
+    padding-top: 4px;
+    border-radius: 4px;
     background: #90FDFF;
     height: 30px;
 }
-.contenedor a{
-    color: white;
+.input_button:hover{
+    background: #81e1e3;
 }
+.contenedor_login a{
+    color: black;
+}
+
